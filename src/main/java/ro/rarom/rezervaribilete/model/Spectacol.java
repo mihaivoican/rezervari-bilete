@@ -17,7 +17,7 @@ import java.util.Date;
 public class Spectacol {
     @Id
     @GeneratedValue
-    private Long id;
+    private long id;
     @Column
     private String nume;
     @Column

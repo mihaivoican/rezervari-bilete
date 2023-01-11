@@ -13,7 +13,7 @@ import java.time.LocalDate;
 public class IntervalOrar {
     @Id
     @GeneratedValue
-    private Long id;
+    private long id;
     @Column
     private LocalDate zi;
     @Column

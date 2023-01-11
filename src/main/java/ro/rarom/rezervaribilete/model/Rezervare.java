@@ -12,7 +12,7 @@ import javax.persistence.*;
 public class Rezervare {
     @Id
     @GeneratedValue
-    private Long id;
+    private long id;
     @Column
     private Integer nrLoc;
     @Column
