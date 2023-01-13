@@ -4,21 +4,16 @@ import lombok.*;
 
 import javax.persistence.*;
 
-@Entity
+//@Entity
 @Setter
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
 public class Rezervare {
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
-    @Column
     private Integer nrLoc;
-    @Column
     private String email;
-    @Column
     private String telefon;
-    @ManyToOne
-    private IntervalOrar intervalOrar;
 }

@@ -4,20 +4,19 @@ import lombok.*;
 
 import javax.persistence.*;
 import java.time.LocalDate;
+import java.util.List;
 
-@Entity
+//@Entity
 @Setter
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
 public class IntervalOrar {
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
-    @Column
     private LocalDate zi;
-    @Column
     private String interval;
-    @ManyToOne
-    private Spectacol spectacol;
+    @OneToMany
+    private List<Rezervare> rezervari;
 }

@@ -1,0 +1,243 @@
+{
+  "id": 1,
+  "nume": "Primul Spectacol",
+  "nrLocuri": 20,
+  "dataStart": "2023-01-13",
+  "dataFinal": "2023-01-15",
+  "intervale": [
+    {
+      "id": 1,
+      "zi": "2023-01-13",
+      "interval": null,
+      "rezervari": [
+        {
+          "id": 15,
+          "nrLoc": 15,
+          "email": "email@test.ro",
+          "telefon": "telefon"
+        },
+        {
+          "id": 5,
+          "nrLoc": 5,
+          "email": "email@test.ro",
+          "telefon": "telefon"
+        },
+        {
+          "id": 7,
+          "nrLoc": 7,
+          "email": "email@test.ro",
+          "telefon": "telefon"
+        },
+        {
+          "id": 7,
+          "nrLoc": 7,
+          "email": "email@test.ro",
+          "telefon": "telefon"
+        },
+        {
+          "id": 9,
+          "nrLoc": 9,
+          "email": "email@test.ro",
+          "telefon": "telefon"
+        },
+        {
+          "id": 18,
+          "nrLoc": 18,
+          "email": "email@test.ro",
+          "telefon": "telefon"
+        },
+        {
+          "id": 6,
+          "nrLoc": 6,
+          "email": "email@test.ro",
+          "telefon": "telefon"
+        },
+        {
+          "id": 7,
+          "nrLoc": 7,
+          "email": "email@test.ro",
+          "telefon": "telefon"
+        },
+        {
+          "id": 2,
+          "nrLoc": 2,
+          "email": "email@test.ro",
+          "telefon": "telefon"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "zi": "2023-01-13",
+      "interval": null,
+      "rezervari": [
+        {
+          "id": 3,
+          "nrLoc": 3,
+          "email": "email@test.ro",
+          "telefon": "telefon"
+        },
+        {
+          "id": 12,
+          "nrLoc": 12,
+          "email": "email@test.ro",
+          "telefon": "telefon"
+        },
+        {
+          "id": 10,
+          "nrLoc": 10,
+          "email": "email@test.ro",
+          "telefon": "telefon"
+        },
+        {
+          "id": 10,
+          "nrLoc": 10,
+          "email": "email@test.ro",
+          "telefon": "telefon"
+        },
+        {
+          "id": 19,
+          "nrLoc": 19,
+          "email": "email@test.ro",
+          "telefon": "telefon"
+        },
+        {
+          "id": 6,
+          "nrLoc": 6,
+          "email": "email@test.ro",
+          "telefon": "telefon"
+        },
+        {
+          "id": 14,
+          "nrLoc": 14,
+          "email": "email@test.ro",
+          "telefon": "telefon"
+        },
+        {
+          "id": 11,
+          "nrLoc": 11,
+          "email": "email@test.ro",
+          "telefon": "telefon"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "zi": "2023-01-13",
+      "interval": null,
+      "rezervari": [
+        {
+          "id": 9,
+          "nrLoc": 9,
+          "email": "email@test.ro",
+          "telefon": "telefon"
+        },
+        {
+          "id": 2,
+          "nrLoc": 2,
+          "email": "email@test.ro",
+          "telefon": "telefon"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "zi": "2023-01-14",
+      "interval": null,
+      "rezervari": [
+        {
+          "id": 0,
+          "nrLoc": 0,
+          "email": "email@test.ro",
+          "telefon": "telefon"
+        },
+        {
+          "id": 19,
+          "nrLoc": 19,
+          "email": "email@test.ro",
+          "telefon": "telefon"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "zi": "2023-01-14",
+      "interval": null,
+      "rezervari": [
+        {
+          "id": 19,
+          "nrLoc": 19,
+          "email": "email@test.ro",
+          "telefon": "telefon"
+        },
+        {
+          "id": 15,
+          "nrLoc": 15,
+          "email": "email@test.ro",
+          "telefon": "telefon"
+        },
+        {
+          "id": 11,
+          "nrLoc": 11,
+          "email": "email@test.ro",
+          "telefon": "telefon"
+        },
+        {
+          "id": 2,
+          "nrLoc": 2,
+          "email": "email@test.ro",
+          "telefon": "telefon"
+        },
+        {
+          "id": 4,
+          "nrLoc": 4,
+          "email": "email@test.ro",
+          "telefon": "telefon"
+        },
+        {
+          "id": 12,
+          "nrLoc": 12,
+          "email": "email@test.ro",
+          "telefon": "telefon"
+        },
+        {
+          "id": 15,
+          "nrLoc": 15,
+          "email": "email@test.ro",
+          "telefon": "telefon"
+        },
+        {
+          "id": 2,
+          "nrLoc": 2,
+          "email": "email@test.ro",
+          "telefon": "telefon"
+        },
+        {
+          "id": 8,
+          "nrLoc": 8,
+          "email": "email@test.ro",
+          "telefon": "telefon"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "zi": "2023-01-14",
+      "interval": null,
+      "rezervari": [
+        {
+          "id": 18,
+          "nrLoc": 18,
+          "email": "email@test.ro",
+          "telefon": "telefon"
+        },
+        {
+          "id": 9,
+          "nrLoc": 9,
+          "email": "email@test.ro",
+          "telefon": "telefon"
+        }
+      ]
+    }
+  ]
+}

@@ -2,29 +2,24 @@ package ro.rarom.rezervaribilete.model;
 
 import lombok.*;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.time.LocalDate;
-import java.util.Date;
+import java.util.List;
 
-@Entity
+//@Entity
 @Setter
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
 public class Spectacol {
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
-    @Column
     private String nume;
-    @Column
     private int nrLocuri;
-    @Column
     private LocalDate dataStart;
-    @Column
     private LocalDate dataFinal;
+    @OneToMany
+    private List<IntervalOrar> intervale;
 
 }
