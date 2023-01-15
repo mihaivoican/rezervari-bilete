@@ -16,7 +16,7 @@ public class IntervalOrar {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
     private LocalDate zi;
-    private String interval;
+    private String ora;
     @OneToMany
     private List<Rezervare> rezervari;
 }

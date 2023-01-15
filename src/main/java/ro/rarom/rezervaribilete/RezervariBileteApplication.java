@@ -12,23 +12,26 @@ import ro.rarom.rezervaribilete.service.RezervareReader;
 
 import java.io.File;
 import java.nio.file.Path;
+import java.util.List;
 
 @SpringBootApplication
 public class RezervariBileteApplication implements CommandLineRunner {
+//public class RezervariBileteApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(RezervariBileteApplication.class, args);
 	}
 
+	//pt umplerea cu date a claselor din modelul de date; vezi si cod la
 	@Override
 	public void run(String... args) throws Exception {
 		RezervareReader reader = new RezervareReader();
-		Spectacol spectacol = reader.generateSpectacol();
+		List<Spectacol> listaSpectacole = reader.generateSpectacole();
 		File json = new File(Path.of("src/main/resources/spectacol.json").toUri());
 		ObjectMapper mapper = new ObjectMapper();
 		mapper.registerModule(new JavaTimeModule());
 		mapper.disable(SerializationFeature.WRITE_DATES_AS_TIMESTAMPS);
-		mapper.writeValue(json ,spectacol);
+		mapper.writeValue(json ,listaSpectacole);
 	}
 
 }
