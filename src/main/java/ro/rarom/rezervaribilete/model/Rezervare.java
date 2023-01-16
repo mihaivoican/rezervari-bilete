@@ -4,7 +4,7 @@ import lombok.*;
 
 import javax.persistence.*;
 
-//@Entity
+@Entity
 @Setter
 @Getter
 @NoArgsConstructor
@@ -12,7 +12,7 @@ import javax.persistence.*;
 public class Rezervare {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+    private Long id;
     private Integer nrLoc;
     private String email;
     private String telefon;

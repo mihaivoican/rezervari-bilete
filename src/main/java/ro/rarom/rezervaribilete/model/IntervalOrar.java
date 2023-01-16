@@ -6,7 +6,7 @@ import javax.persistence.*;
 import java.time.LocalDate;
 import java.util.List;
 
-//@Entity
+@Entity
 @Setter
 @Getter
 @NoArgsConstructor
@@ -14,9 +14,9 @@ import java.util.List;
 public class IntervalOrar {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+    private Long id;
     private LocalDate zi;
     private String ora;
-    @OneToMany
+    @OneToMany(cascade = CascadeType.ALL)
     private List<Rezervare> rezervari;
 }

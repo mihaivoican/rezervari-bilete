@@ -20,7 +20,7 @@ public class RezervareReader {
         List<Spectacol> lista = new ArrayList<>();
         for (int nr = 1; nr < 4; nr++) {
             Spectacol s = new Spectacol();
-            s.setId(1);
+//            s.setId(1);
             s.setNume("Spectacol " + nr);
             s.setNrLocuri(20);
             s.setDataStart(LocalDate.now().plusDays(nr));
@@ -41,7 +41,7 @@ public class RezervareReader {
             // pentru fiecare zi a spectacolului cream 3 intervale orare
             for (int i = 0; i < 3; i++) {
                 IntervalOrar interval = new IntervalOrar();
-                interval.setId(day + i);
+//                interval.setId(day + i);
                 interval.setZi(LocalDate.now().plusDays(  day - 1 +nr));
                 interval.setOra(String.valueOf(10 + i * 2));
                 interval.setRezervari(generateRezervariForInterval(interval, spectacol.getNrLocuri()));
@@ -56,7 +56,7 @@ public class RezervareReader {
         List<Rezervare> rezervari = new ArrayList<>();
         new Random().ints(0, nrLocuriDisponibile).limit(new Random().nextInt(10)).iterator()
                 .forEachRemaining((IntConsumer) r -> {
-                    rezervari.add(new Rezervare(r, r, "email@test.ro", "telefon"));
+                    rezervari.add(new Rezervare(null, r, "email@test.ro", "telefon"));
                 });
         return rezervari;
     }

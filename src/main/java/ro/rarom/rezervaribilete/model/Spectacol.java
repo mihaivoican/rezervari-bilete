@@ -6,7 +6,7 @@ import javax.persistence.*;
 import java.time.LocalDate;
 import java.util.List;
 
-//@Entity
+@Entity
 @Setter
 @Getter
 @NoArgsConstructor
@@ -14,12 +14,12 @@ import java.util.List;
 public class Spectacol {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+    private Long id;
     private String nume;
     private int nrLocuri;
     private LocalDate dataStart;
     private LocalDate dataFinal;
-    @OneToMany
+    @OneToMany(cascade = CascadeType.ALL)
     private List<IntervalOrar> intervale;
 
 }
