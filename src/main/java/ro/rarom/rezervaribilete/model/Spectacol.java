@@ -19,7 +19,8 @@ public class Spectacol {
     private int nrLocuri;
     private LocalDate dataStart;
     private LocalDate dataFinal;
-    @OneToMany(cascade = CascadeType.ALL)
+//    @OneToMany(mappedBy = "spectacol",  cascade = {CascadeType.PERSIST, CascadeType.MERGE}, fetch = FetchType.LAZY)
+   @OneToMany(cascade=CascadeType.ALL)
     private List<IntervalOrar> intervale;
 
 }

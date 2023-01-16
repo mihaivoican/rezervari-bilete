@@ -1,5 +1,6 @@
 package ro.rarom.rezervaribilete.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.*;
 
 import javax.persistence.*;
@@ -19,4 +20,7 @@ public class IntervalOrar {
     private String ora;
     @OneToMany(cascade = CascadeType.ALL)
     private List<Rezervare> rezervari;
+//    @ManyToOne
+//    @JsonIgnore
+//    private Spectacol spectacol;
 }
