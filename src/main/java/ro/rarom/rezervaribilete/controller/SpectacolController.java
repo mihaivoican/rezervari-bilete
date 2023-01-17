@@ -2,6 +2,7 @@ package ro.rarom.rezervaribilete.controller;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
+import ro.rarom.rezervaribilete.model.IntervalOrar;
 import ro.rarom.rezervaribilete.model.Spectacol;
 import ro.rarom.rezervaribilete.service.SpectacolService;
 
@@ -43,6 +44,13 @@ public class SpectacolController {
     @PutMapping("{id}")
     public Spectacol update(@PathVariable long id, @RequestBody Spectacol spectacol) {
         return spectacolService.update(id,spectacol);
+    }
+
+    //adaugare interval orar  la spectacol
+    @PostMapping("{id}/intervale")
+    public Spectacol addIntervalToSpectacol(@PathVariable long id, @RequestBody IntervalOrar intervalOrar){
+        return spectacolService.addIntervalToSpectacol(id,intervalOrar);
+
     }
 
 

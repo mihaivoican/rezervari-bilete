@@ -2,6 +2,7 @@ package ro.rarom.rezervaribilete.service;
 
 import org.springframework.stereotype.Service;
 import ro.rarom.rezervaribilete.exception.ResourceNotFoundException;
+import ro.rarom.rezervaribilete.model.IntervalOrar;
 import ro.rarom.rezervaribilete.model.Spectacol;
 
 import java.util.List;
@@ -49,6 +50,13 @@ public class SpectacolService {
         spectacolDeActualizat.setDataFinal(spectacol.getDataFinal());
         spectacolDeActualizat.setNrLocuri(spectacol.getNrLocuri());
         return spectacolRepository.save(spectacolDeActualizat);
+    }
+
+    //adaugare intervale orare la spectacol
+    public Spectacol addIntervalToSpectacol(long id, IntervalOrar intervalOrar) {
+        Spectacol spectacol =getById(id);
+        spectacol.getIntervale().add(intervalOrar);
+        return spectacolRepository.save(spectacol);
     }
 
 
