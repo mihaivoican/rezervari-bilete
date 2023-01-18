@@ -56,7 +56,7 @@ public class RezervareReader {
         List<Rezervare> rezervari = new ArrayList<>();
         new Random().ints(0, nrLocuriDisponibile).limit(new Random().nextInt(10)).iterator()
                 .forEachRemaining((IntConsumer) r -> {
-                    rezervari.add(new Rezervare(null, r, "email@test.ro", "telefon"));
+                    rezervari.add(new Rezervare(null, r, "email@test.ro", "0711111111"));
                 });
         return rezervari;
     }

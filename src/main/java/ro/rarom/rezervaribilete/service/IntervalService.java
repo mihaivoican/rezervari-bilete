@@ -23,8 +23,6 @@ public class IntervalService {
     public IntervalOrar addRezervareToInterval(long id, Rezervare rezervare){
         IntervalOrar intervalCautat = getByIdInterval(id);
         intervalCautat.getRezervari().add(rezervare);
-        //Trebuia salvat intervalul, nu rezervarea!
-        // Pentru orice eventualitate am creat si repository pentru rezervari, nu cred ca merge altfel...
         return intervalRepository.save(intervalCautat);
     }
 
