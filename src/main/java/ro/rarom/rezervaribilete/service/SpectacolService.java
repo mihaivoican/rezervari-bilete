@@ -28,7 +28,7 @@ public class SpectacolService {
     //caut dupa Id
     public Spectacol getById(long id) {
         return spectacolRepository.findById( id)
-                .orElseThrow(() -> new ResourceNotFoundException("Spectacolul nu exista",id));
+                .orElseThrow(() -> new ResourceNotFoundException("Spectacolul nu exista ",id));
     }
 
     //sterg spectacol dupa id
@@ -60,10 +60,6 @@ public class SpectacolService {
         return spectacolRepository.save(spectacol);
     }
 
-    //adaugare rezervare la interval orar
-    public IntervalOrar addRezervareToInterval(long id, Rezervare rezervare){
-        IntervalOrar interval =
-    }
 
 
 
