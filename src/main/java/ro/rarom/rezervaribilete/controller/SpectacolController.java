@@ -50,7 +50,6 @@ public class SpectacolController {
     @PostMapping("{id}/intervale")
     public Spectacol addIntervalToSpectacol(@PathVariable long id, @RequestBody IntervalOrar intervalOrar){
         return spectacolService.addIntervalToSpectacol(id,intervalOrar);
-
     }
 
 

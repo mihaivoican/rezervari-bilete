@@ -11,7 +11,6 @@ public class IntervalService {
 
     public IntervalService(IntervalRepository intervalRepository) {
         this.intervalRepository = intervalRepository;
-
     }
 
     //cautare dupa Id
@@ -24,9 +23,9 @@ public class IntervalService {
     public IntervalOrar addRezervareToInterval(long id, Rezervare rezervare){
         IntervalOrar intervalCautat = getByIdInterval(id);
         intervalCautat.getRezervari().add(rezervare);
-        return intervalRepository.save(rezervare);
-
-
+        //Trebuia salvat intervalul, nu rezervarea!
+        // Pentru orice eventualitate am creat si repository pentru rezervari, nu cred ca merge altfel...
+        return intervalRepository.save(intervalCautat);
     }
 
 }
