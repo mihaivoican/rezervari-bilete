@@ -20,7 +20,8 @@ public class Spectacol {
     private LocalDate dataStart;
     private LocalDate dataFinal;
 //    @OneToMany(mappedBy = "spectacol",  cascade = {CascadeType.PERSIST, CascadeType.MERGE}, fetch = FetchType.LAZY)
-   @OneToMany(cascade=CascadeType.ALL)
+   @OneToMany(cascade=CascadeType.ALL,  orphanRemoval = true)
+   @JoinColumn(name = "spectacol_id")       ////e numele coloanei foreign key in tabela copil
     private List<IntervalOrar> intervale;
 
 }
