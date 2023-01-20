@@ -50,6 +50,7 @@ public class SpectacolService {
         spectacolDeActualizat.setDataStart(spectacol.getDataStart());
         spectacolDeActualizat.setDataFinal(spectacol.getDataFinal());
         spectacolDeActualizat.setNrLocuri(spectacol.getNrLocuri());
+        spectacolDeActualizat.setIntervale(spectacol.getIntervale());
         return spectacolRepository.save(spectacolDeActualizat);
     }
 

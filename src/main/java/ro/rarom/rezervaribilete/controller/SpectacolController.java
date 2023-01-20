@@ -36,7 +36,7 @@ public class SpectacolController {
 
     //sterge spectacol
     @DeleteMapping("{id}") //http://host:port/spectacole/3
-    public Spectacol deleteByid(@PathVariable long id) {
+    public Spectacol deleteById(@PathVariable long id) {
         return spectacolService.deleteById(id);
     }
 

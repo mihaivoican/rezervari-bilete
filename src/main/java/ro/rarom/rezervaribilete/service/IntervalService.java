@@ -26,4 +26,9 @@ public class IntervalService {
         return intervalRepository.save(intervalCautat);
     }
 
+    public IntervalOrar deleteByIdInterval(long id) {
+        IntervalOrar intervalCautat = getByIdInterval(id);
+        intervalRepository.deleteById(id);
+        return  intervalCautat;
+    }
 }

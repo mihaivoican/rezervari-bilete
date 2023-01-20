@@ -14,6 +14,19 @@ public class IntervalController {
 
     private final IntervalService intervalService;
 
+
+    //cautare interval dupa id
+    @GetMapping("{id}")
+    public IntervalOrar getById(@PathVariable long id){
+        return intervalService.getByIdInterval(id);
+    }
+
+    //sterg interval
+    @DeleteMapping("{id}")
+    public IntervalOrar deleteById(@PathVariable long id){
+        return intervalService.deleteByIdInterval(id);
+    }
+
     //adaugare rezervare la interval orar
     @PostMapping("{id}/rezervari")
     public IntervalOrar addRezervareTointerval(@PathVariable long id, @RequestBody Rezervare rezervare){
