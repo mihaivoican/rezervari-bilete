@@ -5,6 +5,8 @@ import ro.rarom.rezervaribilete.exception.ResourceNotFoundException;
 import ro.rarom.rezervaribilete.model.IntervalOrar;
 import ro.rarom.rezervaribilete.model.Rezervare;
 
+import java.util.Optional;
+
 @Service
 public class IntervalService {
     private final IntervalRepository intervalRepository;
@@ -30,5 +32,13 @@ public class IntervalService {
         IntervalOrar intervalCautat = getByIdInterval(id);
         intervalRepository.deleteById(id);
         return  intervalCautat;
+    }
+
+    public IntervalOrar updateIntervalOrar(long id, IntervalOrar intervalOrar) {
+        Optional<IntervalOrar> intervalCautat = intervalRepository.findById(id);
+        if(intervalCautat.isPresent()){
+            return intervalRepository.save(intervalOrar);
+        }
+        return null;
     }
 }

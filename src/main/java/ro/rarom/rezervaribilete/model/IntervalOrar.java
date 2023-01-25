@@ -18,7 +18,7 @@ public class IntervalOrar {
     private Long id;
     private LocalDate zi;
     private String ora;
-    @OneToMany(cascade = CascadeType.ALL,  orphanRemoval = true)
+    @OneToMany(cascade = CascadeType.ALL  )
     @JoinColumn(name = "intervalOrar_id")       //e numele coloanei foreign key in tabela copil
     private List<Rezervare> rezervari;
 //    @ManyToOne

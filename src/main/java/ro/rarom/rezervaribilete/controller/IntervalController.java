@@ -28,8 +28,8 @@ public class IntervalController {
     }
 
     //adaugare rezervare la interval orar
-    @PostMapping("{id}/rezervari")
-    public IntervalOrar addRezervareTointerval(@PathVariable long id, @RequestBody Rezervare rezervare){
-        return intervalService.addRezervareToInterval(id,rezervare);
+    @PutMapping("{id}")
+    public IntervalOrar addRezervareTointerval(@PathVariable long id, @RequestBody IntervalOrar intervalOrar){
+        return intervalService.updateIntervalOrar(id,intervalOrar);
     }
 }
